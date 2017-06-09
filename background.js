@@ -32,7 +32,9 @@ chrome.webRequest.onHeadersReceived.addListener(
 updateIcon = function() {
     if (profilerUrl.hasOwnProperty(currentTab) && profilerUrl[currentTab] !== null) {
         chrome.browserAction.setIcon({path: 'icon-38.png'});
+        chrome.browserAction.setTitle({title: 'Symfony Profiler information available'});
     } else {
         chrome.browserAction.setIcon({path: 'icon-disabled-38.png'});
+        chrome.browserAction.setTitle({title: 'No Symfony Profiler information found for this page'});
     }
 };
