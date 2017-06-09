@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Symfony Profiler Addon",
+  "description": "This addon provides easy access to the Symfony Profiler information when it's available for the current web page, even if the toolbar isn't present.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon-disabled-38.png"
+  },
+  "background": {
+    "persistent": true,
+    "page": "background.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "webRequest",
+    "activeTab"
+  ]
+}
