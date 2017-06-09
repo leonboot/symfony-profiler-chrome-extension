@@ -3,6 +3,10 @@
   "name": "Symfony Profiler Addon",
   "description": "This addon provides easy access to the Symfony Profiler information when it's available for the current web page, even if the toolbar isn't present.",
   "version": "1.0",
+  "icons": {
+	  "128": "icon-128.png",
+	  "48": "icon-48.png"
+  },
   "browser_action": {
     "default_icon": "icon-disabled-38.png"
   },
